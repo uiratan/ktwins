@@ -1,0 +1,29 @@
+project_name: kwatch
+
+builds:
+  - id: kwatch
+    main: ./cmd/kwatch
+    binary: kwatch
+    goos: [linux, darwin, windows]
+    goarch: [amd64, arm64]
+
+archives:
+  - id: default
+    format: tar.gz
+    files:
+      - README.md
+      - CHANGELOG.md
+      - LICENSE*
+
+checksum:
+  name_template: "checksums.txt"
+
+changelog:
+  use: changelog
+  sort: asc
+  abbrev: 0
+
+release:
+  # owner/name are auto-detected from the git remote; override if needed.
+  prerelease: false
+  name_template: "Version {{ .Tag }}"
