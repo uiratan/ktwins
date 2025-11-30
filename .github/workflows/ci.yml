@@ -26,10 +26,10 @@ jobs:
         run: go test ./...
 
       - name: Build
-        run: go build -o bin/kwatch ./cmd/kwatch
+        run: go build -o bin/ktwins ./cmd/ktwins
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: kwatch-linux-amd64
-          path: bin/kwatch
+          name: ktwins-linux-amd64
+          path: bin/ktwins

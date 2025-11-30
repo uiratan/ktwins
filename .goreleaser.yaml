@@ -1,9 +1,9 @@
-project_name: kwatch
+project_name: ktwins
 
 builds:
-  - id: kwatch
-    main: ./cmd/kwatch
-    binary: kwatch
+  - id: ktwins
+    main: ./cmd/ktwins
+    binary: ktwins
     goos: [linux, darwin, windows]
     goarch: [amd64, arm64]
 
