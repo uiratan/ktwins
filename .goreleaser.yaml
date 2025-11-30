@@ -19,7 +19,7 @@ checksum:
   name_template: "checksums.txt"
 
 changelog:
-  use: changelog
+  use: git
   sort: asc
   abbrev: 0
 
