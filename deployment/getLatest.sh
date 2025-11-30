@@ -73,7 +73,7 @@ main() {
   mkdir -p "${bindir}"
 
   tmpdir="$(mktemp -d)"
-  trap 'rm -rf "${tmpdir}"' EXIT
+  trap 'rm -rf "${tmpdir:-}"' EXIT
 
   log "Downloading ${url}"
   curl -fL "${url}" -o "${tmpdir}/${artifact}" || fail "Download failed"
