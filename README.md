@@ -49,7 +49,7 @@ Its visual identity is inspired by the Two Trees of Valinor, reflecting duality,
 ### Install script (latest release)
 Downloads the latest release for your OS/arch and installs to `/usr/local/bin` (or current dir if not writable). Override with `BIN_DIR` (e.g., `BIN_DIR=~/.local/bin`).
 ```bash
-curl https://raw.githubusercontent.com/uiratan/ktwins/main/deployment/getLatest.sh | bash
+curl https://raw.githubusercontent.com/uiratan/ktwins/master/deployment/getLatest.sh | bash
 ```
 
 ### Manual download
